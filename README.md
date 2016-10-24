@@ -2,7 +2,7 @@
 ==============
 LMSideBarController is a simple side bar controller inspired by Tappy and Simon Hoang.
 
-<img src="https://raw.github.com/lminhtm/LMSideBarController/master/Screenshots/screenshot1.png"/>
+<img src="https://raw.github.com/lminhtm/LMSideBarController/master/Screenshots/screenshot2.png"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://raw.github.com/lminhtm/LMSideBarController/master/Screenshots/screenshot3.gif"/>
 
@@ -28,22 +28,22 @@ pod 'LMSideBarController'
 You can subclass LMSideBarController and setup it in awakeFromNib method.
 ```ObjC
 // Init side bar styles
-    LMSideBarDepthStyle *sideBarDepthStyle = [LMSideBarDepthStyle new];
-    sideBarDepthStyle.menuWidth = 220;
+LMSideBarDepthStyle *sideBarDepthStyle = [LMSideBarDepthStyle new];
+sideBarDepthStyle.menuWidth = 220;
     
-    // Init view controllers
-    LMLeftMenuViewController *leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
-    LMRightMenuViewController *rightMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"rightMenuViewController"];
-    LMMainNavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"mainNavigationController"];
+// Init view controllers
+LMLeftMenuViewController *leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
+LMRightMenuViewController *rightMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"rightMenuViewController"];
+LMMainNavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"mainNavigationController"];
     
-    // Setup side bar controller
-    [self setPanGestureEnabled:YES];
-    [self setDelegate:self];
-    [self setMenuViewController:leftMenuViewController forDirection:LMSideBarControllerDirectionLeft];
-    [self setMenuViewController:rightMenuViewController forDirection:LMSideBarControllerDirectionRight];
-    [self setSideBarStyle:sideBarDepthStyle forDirection:LMSideBarControllerDirectionLeft];
-    [self setSideBarStyle:sideBarDepthStyle forDirection:LMSideBarControllerDirectionRight];
-    [self setContentViewController:navigationController];
+// Setup side bar controller
+[self setPanGestureEnabled:YES];
+[self setDelegate:self];
+[self setMenuViewController:leftMenuViewController forDirection:LMSideBarControllerDirectionLeft];
+[self setMenuViewController:rightMenuViewController forDirection:LMSideBarControllerDirectionRight];
+[self setSideBarStyle:sideBarDepthStyle forDirection:LMSideBarControllerDirectionLeft];
+[self setSideBarStyle:sideBarDepthStyle forDirection:LMSideBarControllerDirectionRight];
+[self setContentViewController:navigationController];
 ```
 You can present it manually:
 ```ObjC
