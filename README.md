@@ -12,7 +12,9 @@ LMSideBarController is a simple side bar controller inspired by Tappy and Simon 
 * Expandable structure.
 
 ## Requirements
+* Xcode 8 or higher
 * iOS 8.0 or higher
+* ARC
 
 ## Installation
 #### From CocoaPods
