@@ -1,10 +1,9 @@
 # LMSideBarController
-==============
 LMSideBarController is a simple side bar controller inspired by Tappy and Simon Hoang.
 
-<img src="https://raw.github.com/lminhtm/LMSideBarController/master/Screenshots/screenshot2.png"/>
+<img src="https://raw.github.com/lminhtm/LMSideBarController/master/Screenshots/screenshot1.png"/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img src="https://raw.github.com/lminhtm/LMSideBarController/master/Screenshots/screenshot3.gif"/>
+<img src="https://raw.github.com/lminhtm/LMSideBarController/master/Screenshots/screenshot4.gif"/>
 
 ## Features
 * Side bar controller with blur+transform3D effect.
