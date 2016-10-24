@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "LMSideBarStyle.h"
+#import "UIViewController+LMSideBarController.h"
 
 /**
  The side bar controller direction enums.
@@ -30,7 +31,7 @@ typedef NS_OPTIONS(NSUInteger, LMSideBarControllerState) {
 @protocol LMSideBarControllerDelegate;
 
 /**
- A blur+transform side bar controller inspired by Tappy.
+ LMSideBarController is a simple side bar controller inspired by Tappy.
  */
 @interface LMSideBarController : UIViewController
 
