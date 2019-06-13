@@ -1,16 +1,16 @@
 //
-//  LMRightMenuViewController.m
+//  RightMenuViewController.m
 //  LMSideBarControllerDemo
 //
 //  Created by LMinh on 10/11/15.
 //  Copyright © 2015 LMinh. All rights reserved.
 //
 
-#import "LMRightMenuViewController.h"
+#import "RightMenuViewController.h"
 #import "UIViewController+LMSideBarController.h"
-#import "LMMessageCell.h"
+#import "MessageCell.h"
 
-@interface LMRightMenuViewController ()
+@interface RightMenuViewController ()
 
 @property (nonatomic, strong) NSArray *messageDicts;
 
@@ -18,7 +18,7 @@
 
 @end
 
-@implementation LMRightMenuViewController
+@implementation RightMenuViewController
 
 #pragma mark - VIEW LIFECYCLE
 
@@ -47,7 +47,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    LMMessageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"messageCell"];
+    MessageCell *cell = [tableView dequeueReusableCellWithIdentifier:@"messageCell"];
     
     NSDictionary *messageDict = [self.messageDicts objectAtIndex:indexPath.row];
     cell.nameLabel.text = [messageDict objectForKey:@"name"];
@@ -63,8 +63,6 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    
-    [self.sideBarController hideMenuViewController:YES];
 }
 
 @end

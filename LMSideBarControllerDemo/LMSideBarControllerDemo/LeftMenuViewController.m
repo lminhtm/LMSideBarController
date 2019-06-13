@@ -1,16 +1,16 @@
 //
-//  LMMenuViewController.m
+//  LeftMenuViewController.m
 //  LMSideBarControllerDemo
 //
 //  Created by LMinh on 10/11/15.
 //  Copyright © 2015 LMinh. All rights reserved.
 //
 
-#import "LMLeftMenuViewController.h"
+#import "LeftMenuViewController.h"
 #import "UIViewController+LMSideBarController.h"
-#import "LMMainNavigationController.h"
+#import "MainNavigationController.h"
 
-@interface LMLeftMenuViewController ()
+@interface LeftMenuViewController ()
 
 @property (nonatomic, strong) NSArray *menuTitles;
 
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation LMLeftMenuViewController
+@implementation LeftMenuViewController
 
 #pragma mark - VIEW LIFECYCLE
 
@@ -67,17 +67,27 @@
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
-    LMMainNavigationController *mainNavigationController = (LMMainNavigationController *)self.sideBarController.contentViewController;
+    [self.sideBarController hideMenuViewController:YES];
+    
+    MainNavigationController *navigationController = (MainNavigationController *)self.sideBarController.contentViewController;
     NSString *menuTitle = self.menuTitles[indexPath.row];
     if ([menuTitle isEqualToString:@"Home"]) {
-        [mainNavigationController showHomeViewController];
+        [navigationController showHomeViewController];
     }
-    else {
-        mainNavigationController.othersViewController.title = menuTitle;
-        [mainNavigationController showOthersViewController];
+    else if ([menuTitle isEqualToString:@"Profile"]) {
+        [navigationController showProfileViewController];
     }
-    
-    [self.sideBarController hideMenuViewController:YES];
+    else if ([menuTitle isEqualToString:@"Chats"]) {
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [self.sideBarController showMenuViewControllerInDirection:LMSideBarControllerDirectionRight];
+        });
+    }
+    else if ([menuTitle isEqualToString:@"Settings"]) {
+        [navigationController showSettingsViewController];
+    }
+    else if ([menuTitle isEqualToString:@"About"]) {
+        [navigationController showAboutViewController];
+    }
 }
 
 @end

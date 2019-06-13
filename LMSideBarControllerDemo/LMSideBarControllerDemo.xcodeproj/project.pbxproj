@@ -8,41 +8,52 @@
 
 /* Begin PBXBuildFile section */
 		5C007B9C1DBDD006001C5C38 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C007B9B1DBDD006001C5C38 /* Launch Screen.storyboard */; };
+		5C04094F22B2538A0039448F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04094E22B2538A0039448F /* BaseViewController.m */; };
+		5C04095222B254030039448F /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04095122B254030039448F /* ProfileViewController.m */; };
+		5C04095522B254510039448F /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04095422B254510039448F /* SettingsViewController.m */; };
+		5C04095822B2545B0039448F /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C04095722B2545B0039448F /* AboutViewController.m */; };
 		5C3E73901BCA242F00B87553 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E738F1BCA242F00B87553 /* main.m */; };
-		5C3E73931BCA242F00B87553 /* LMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73921BCA242F00B87553 /* LMAppDelegate.m */; };
-		5C3E73961BCA242F00B87553 /* LMRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73951BCA242F00B87553 /* LMRootViewController.m */; };
+		5C3E73931BCA242F00B87553 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73921BCA242F00B87553 /* AppDelegate.m */; };
+		5C3E73961BCA242F00B87553 /* SideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73951BCA242F00B87553 /* SideBarController.m */; };
 		5C3E73991BCA242F00B87553 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C3E73971BCA242F00B87553 /* Main.storyboard */; };
 		5C3E739B1BCA242F00B87553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C3E739A1BCA242F00B87553 /* Assets.xcassets */; };
-		5C3E73A71BCA247200B87553 /* LMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73A61BCA247200B87553 /* LMHomeViewController.m */; };
-		5C3E73AA1BCA247B00B87553 /* LMLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73A91BCA247B00B87553 /* LMLeftMenuViewController.m */; };
-		5C3E73B01BCA253F00B87553 /* LMMainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73AF1BCA253F00B87553 /* LMMainNavigationController.m */; };
+		5C3E73A71BCA247200B87553 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73A61BCA247200B87553 /* HomeViewController.m */; };
+		5C3E73AA1BCA247B00B87553 /* LeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73A91BCA247B00B87553 /* LeftMenuViewController.m */; };
+		5C3E73B01BCA253F00B87553 /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73AF1BCA253F00B87553 /* MainNavigationController.m */; };
 		5C3E73B81BCA25D300B87553 /* LMSideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73B71BCA25D300B87553 /* LMSideBarController.m */; };
 		5C3E73BB1BCA260E00B87553 /* UIViewController+LMSideBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73BA1BCA260E00B87553 /* UIViewController+LMSideBarController.m */; };
 		5C3E73D91BCA294800B87553 /* LMSideBarDepthStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73D21BCA294800B87553 /* LMSideBarDepthStyle.m */; };
 		5C3E73DC1BCA294800B87553 /* LMSideBarStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73D81BCA294800B87553 /* LMSideBarStyle.m */; };
-		5C3E73DF1BCA2E3000B87553 /* LMRightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73DE1BCA2E3000B87553 /* LMRightMenuViewController.m */; };
+		5C3E73DF1BCA2E3000B87553 /* RightMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3E73DE1BCA2E3000B87553 /* RightMenuViewController.m */; };
 		5C4BFD6F1DBCDF2300CD90F3 /* UIImage+LMExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C4BFD6E1DBCDF2300CD90F3 /* UIImage+LMExtension.m */; };
-		5CB1AC4A1DBCEFA7009807DB /* LMMessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1AC491DBCEFA7009807DB /* LMMessageCell.m */; };
-		5CB1AC4D1DBCFB84009807DB /* LMOthersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1AC4C1DBCFB84009807DB /* LMOthersViewController.m */; };
+		5CB1AC4A1DBCEFA7009807DB /* MessageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CB1AC491DBCEFA7009807DB /* MessageCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5C007B9B1DBDD006001C5C38 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		5C04094D22B2538A0039448F /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		5C04094E22B2538A0039448F /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		5C04095022B254030039448F /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		5C04095122B254030039448F /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		5C04095322B254510039448F /* SettingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		5C04095422B254510039448F /* SettingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		5C04095622B2545B0039448F /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		5C04095722B2545B0039448F /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		5C3E738B1BCA242F00B87553 /* LMSideBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMSideBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C3E738F1BCA242F00B87553 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5C3E73911BCA242F00B87553 /* LMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMAppDelegate.h; sourceTree = "<group>"; };
-		5C3E73921BCA242F00B87553 /* LMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMAppDelegate.m; sourceTree = "<group>"; };
-		5C3E73941BCA242F00B87553 /* LMRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LMRootViewController.h; sourceTree = "<group>"; };
-		5C3E73951BCA242F00B87553 /* LMRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LMRootViewController.m; sourceTree = "<group>"; };
+		5C3E73911BCA242F00B87553 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5C3E73921BCA242F00B87553 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5C3E73941BCA242F00B87553 /* SideBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SideBarController.h; sourceTree = "<group>"; };
+		5C3E73951BCA242F00B87553 /* SideBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SideBarController.m; sourceTree = "<group>"; };
 		5C3E73981BCA242F00B87553 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5C3E739A1BCA242F00B87553 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C3E739F1BCA242F00B87553 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C3E73A51BCA247200B87553 /* LMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHomeViewController.h; sourceTree = "<group>"; };
-		5C3E73A61BCA247200B87553 /* LMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHomeViewController.m; sourceTree = "<group>"; };
-		5C3E73A81BCA247B00B87553 /* LMLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMLeftMenuViewController.h; sourceTree = "<group>"; };
-		5C3E73A91BCA247B00B87553 /* LMLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMLeftMenuViewController.m; sourceTree = "<group>"; };
-		5C3E73AE1BCA253F00B87553 /* LMMainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMMainNavigationController.h; sourceTree = "<group>"; };
-		5C3E73AF1BCA253F00B87553 /* LMMainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMMainNavigationController.m; sourceTree = "<group>"; };
+		5C3E73A51BCA247200B87553 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		5C3E73A61BCA247200B87553 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		5C3E73A81BCA247B00B87553 /* LeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftMenuViewController.h; sourceTree = "<group>"; };
+		5C3E73A91BCA247B00B87553 /* LeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftMenuViewController.m; sourceTree = "<group>"; };
+		5C3E73AE1BCA253F00B87553 /* MainNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		5C3E73AF1BCA253F00B87553 /* MainNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 		5C3E73B61BCA25D300B87553 /* LMSideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSideBarController.h; sourceTree = "<group>"; };
 		5C3E73B71BCA25D300B87553 /* LMSideBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSideBarController.m; sourceTree = "<group>"; };
 		5C3E73B91BCA260E00B87553 /* UIViewController+LMSideBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LMSideBarController.h"; sourceTree = "<group>"; };
@@ -51,14 +62,12 @@
 		5C3E73D21BCA294800B87553 /* LMSideBarDepthStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSideBarDepthStyle.m; sourceTree = "<group>"; };
 		5C3E73D71BCA294800B87553 /* LMSideBarStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSideBarStyle.h; sourceTree = "<group>"; };
 		5C3E73D81BCA294800B87553 /* LMSideBarStyle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSideBarStyle.m; sourceTree = "<group>"; };
-		5C3E73DD1BCA2E3000B87553 /* LMRightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMRightMenuViewController.h; sourceTree = "<group>"; };
-		5C3E73DE1BCA2E3000B87553 /* LMRightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMRightMenuViewController.m; sourceTree = "<group>"; };
+		5C3E73DD1BCA2E3000B87553 /* RightMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightMenuViewController.h; sourceTree = "<group>"; };
+		5C3E73DE1BCA2E3000B87553 /* RightMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightMenuViewController.m; sourceTree = "<group>"; };
 		5C4BFD6D1DBCDF2300CD90F3 /* UIImage+LMExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LMExtension.h"; sourceTree = "<group>"; };
 		5C4BFD6E1DBCDF2300CD90F3 /* UIImage+LMExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LMExtension.m"; sourceTree = "<group>"; };
-		5CB1AC481DBCEFA7009807DB /* LMMessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMMessageCell.h; sourceTree = "<group>"; };
-		5CB1AC491DBCEFA7009807DB /* LMMessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMMessageCell.m; sourceTree = "<group>"; };
-		5CB1AC4B1DBCFB84009807DB /* LMOthersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMOthersViewController.h; sourceTree = "<group>"; };
-		5CB1AC4C1DBCFB84009807DB /* LMOthersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMOthersViewController.m; sourceTree = "<group>"; };
+		5CB1AC481DBCEFA7009807DB /* MessageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageCell.h; sourceTree = "<group>"; };
+		5CB1AC491DBCEFA7009807DB /* MessageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +81,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C04094922B2392C0039448F /* Right Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5C3E73DD1BCA2E3000B87553 /* RightMenuViewController.h */,
+				5C3E73DE1BCA2E3000B87553 /* RightMenuViewController.m */,
+				5CB1AC481DBCEFA7009807DB /* MessageCell.h */,
+				5CB1AC491DBCEFA7009807DB /* MessageCell.m */,
+			);
+			name = "Right Menu";
+			sourceTree = "<group>";
+		};
+		5C04094A22B2393B0039448F /* Left Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5C3E73A81BCA247B00B87553 /* LeftMenuViewController.h */,
+				5C3E73A91BCA247B00B87553 /* LeftMenuViewController.m */,
+			);
+			name = "Left Menu";
+			sourceTree = "<group>";
+		};
+		5C04095922B258500039448F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5C3E73A51BCA247200B87553 /* HomeViewController.h */,
+				5C3E73A61BCA247200B87553 /* HomeViewController.m */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		5C04095A22B258580039448F /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5C04095022B254030039448F /* ProfileViewController.h */,
+				5C04095122B254030039448F /* ProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		5C04095B22B258740039448F /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				5C04095322B254510039448F /* SettingsViewController.h */,
+				5C04095422B254510039448F /* SettingsViewController.m */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		5C04095C22B2587E0039448F /* About */ = {
+			isa = PBXGroup;
+			children = (
+				5C04095622B2545B0039448F /* AboutViewController.h */,
+				5C04095722B2545B0039448F /* AboutViewController.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		5C04095D22B258890039448F /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5C04094D22B2538A0039448F /* BaseViewController.h */,
+				5C04094E22B2538A0039448F /* BaseViewController.m */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		5C04095E22B258A30039448F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5C3E73971BCA242F00B87553 /* Main.storyboard */,
+				5C3E739A1BCA242F00B87553 /* Assets.xcassets */,
+				5C007B9B1DBDD006001C5C38 /* Launch Screen.storyboard */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		5C3E73821BCA242F00B87553 = {
 			isa = PBXGroup;
 			children = (
@@ -92,13 +176,10 @@
 		5C3E738D1BCA242F00B87553 /* LMSideBarControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				5C3E73911BCA242F00B87553 /* LMAppDelegate.h */,
-				5C3E73921BCA242F00B87553 /* LMAppDelegate.m */,
+				5C3E73911BCA242F00B87553 /* AppDelegate.h */,
+				5C3E73921BCA242F00B87553 /* AppDelegate.m */,
 				5C3E73B11BCA256700B87553 /* View Controllers */,
-				5C3E73971BCA242F00B87553 /* Main.storyboard */,
-				5C3E739A1BCA242F00B87553 /* Assets.xcassets */,
-				5C007B9B1DBDD006001C5C38 /* Launch Screen.storyboard */,
-				5C3E739F1BCA242F00B87553 /* Info.plist */,
+				5C04095E22B258A30039448F /* Resources */,
 				5C3E738E1BCA242F00B87553 /* Supporting Files */,
 			);
 			path = LMSideBarControllerDemo;
@@ -107,6 +188,7 @@
 		5C3E738E1BCA242F00B87553 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5C3E739F1BCA242F00B87553 /* Info.plist */,
 				5C3E738F1BCA242F00B87553 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -115,8 +197,8 @@
 		5C3E73B11BCA256700B87553 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5C3E73941BCA242F00B87553 /* LMRootViewController.h */,
-				5C3E73951BCA242F00B87553 /* LMRootViewController.m */,
+				5C3E73941BCA242F00B87553 /* SideBarController.h */,
+				5C3E73951BCA242F00B87553 /* SideBarController.m */,
 				5C3E73B21BCA258700B87553 /* Navigation */,
 				5C3E73B31BCA258F00B87553 /* View Controllers */,
 			);
@@ -126,12 +208,10 @@
 		5C3E73B21BCA258700B87553 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				5C3E73AE1BCA253F00B87553 /* LMMainNavigationController.h */,
-				5C3E73AF1BCA253F00B87553 /* LMMainNavigationController.m */,
-				5C3E73A81BCA247B00B87553 /* LMLeftMenuViewController.h */,
-				5C3E73A91BCA247B00B87553 /* LMLeftMenuViewController.m */,
-				5C3E73DD1BCA2E3000B87553 /* LMRightMenuViewController.h */,
-				5C3E73DE1BCA2E3000B87553 /* LMRightMenuViewController.m */,
+				5C3E73AE1BCA253F00B87553 /* MainNavigationController.h */,
+				5C3E73AF1BCA253F00B87553 /* MainNavigationController.m */,
+				5C04094A22B2393B0039448F /* Left Menu */,
+				5C04094922B2392C0039448F /* Right Menu */,
 			);
 			name = Navigation;
 			sourceTree = "<group>";
@@ -139,12 +219,11 @@
 		5C3E73B31BCA258F00B87553 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				5C3E73A51BCA247200B87553 /* LMHomeViewController.h */,
-				5C3E73A61BCA247200B87553 /* LMHomeViewController.m */,
-				5CB1AC4B1DBCFB84009807DB /* LMOthersViewController.h */,
-				5CB1AC4C1DBCFB84009807DB /* LMOthersViewController.m */,
-				5CB1AC481DBCEFA7009807DB /* LMMessageCell.h */,
-				5CB1AC491DBCEFA7009807DB /* LMMessageCell.m */,
+				5C04095D22B258890039448F /* Base */,
+				5C04095922B258500039448F /* Home */,
+				5C04095A22B258580039448F /* Profile */,
+				5C04095B22B258740039448F /* Settings */,
+				5C04095C22B2587E0039448F /* About */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -209,7 +288,7 @@
 		5C3E73831BCA242F00B87553 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = LMinh;
 				TargetAttributes = {
 					5C3E738A1BCA242F00B87553 = {
@@ -220,7 +299,7 @@
 			};
 			buildConfigurationList = 5C3E73861BCA242F00B87553 /* Build configuration list for PBXProject "LMSideBarControllerDemo" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -254,18 +333,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CB1AC4A1DBCEFA7009807DB /* LMMessageCell.m in Sources */,
-				5C3E73961BCA242F00B87553 /* LMRootViewController.m in Sources */,
-				5C3E73931BCA242F00B87553 /* LMAppDelegate.m in Sources */,
+				5C04095822B2545B0039448F /* AboutViewController.m in Sources */,
+				5CB1AC4A1DBCEFA7009807DB /* MessageCell.m in Sources */,
+				5C04094F22B2538A0039448F /* BaseViewController.m in Sources */,
+				5C04095222B254030039448F /* ProfileViewController.m in Sources */,
+				5C3E73961BCA242F00B87553 /* SideBarController.m in Sources */,
+				5C3E73931BCA242F00B87553 /* AppDelegate.m in Sources */,
 				5C3E73BB1BCA260E00B87553 /* UIViewController+LMSideBarController.m in Sources */,
 				5C4BFD6F1DBCDF2300CD90F3 /* UIImage+LMExtension.m in Sources */,
 				5C3E73DC1BCA294800B87553 /* LMSideBarStyle.m in Sources */,
-				5C3E73A71BCA247200B87553 /* LMHomeViewController.m in Sources */,
+				5C3E73A71BCA247200B87553 /* HomeViewController.m in Sources */,
+				5C04095522B254510039448F /* SettingsViewController.m in Sources */,
 				5C3E73901BCA242F00B87553 /* main.m in Sources */,
-				5CB1AC4D1DBCFB84009807DB /* LMOthersViewController.m in Sources */,
-				5C3E73AA1BCA247B00B87553 /* LMLeftMenuViewController.m in Sources */,
-				5C3E73B01BCA253F00B87553 /* LMMainNavigationController.m in Sources */,
-				5C3E73DF1BCA2E3000B87553 /* LMRightMenuViewController.m in Sources */,
+				5C3E73AA1BCA247B00B87553 /* LeftMenuViewController.m in Sources */,
+				5C3E73B01BCA253F00B87553 /* MainNavigationController.m in Sources */,
+				5C3E73DF1BCA2E3000B87553 /* RightMenuViewController.m in Sources */,
 				5C3E73B81BCA25D300B87553 /* LMSideBarController.m in Sources */,
 				5C3E73D91BCA294800B87553 /* LMSideBarDepthStyle.m in Sources */,
 			);
@@ -293,14 +375,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -323,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = LMSideBarController;
@@ -339,14 +429,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -363,7 +461,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = LMSideBarController;
 				SDKROOT = iphoneos;

@@ -1,5 +1,5 @@
 //
-//  LMMessageCell.h
+//  MessageCell.h
 //  LMSideBarControllerDemo
 //
 //  Created by LMinh on 10/23/16.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LMMessageCell : UITableViewCell
+@interface MessageCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *avatarImageView;
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;

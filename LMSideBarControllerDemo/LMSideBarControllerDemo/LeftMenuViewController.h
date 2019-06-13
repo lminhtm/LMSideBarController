@@ -1,5 +1,5 @@
 //
-//  LMRightMenuViewController.h
+//  LeftMenuViewController.h
 //  LMSideBarControllerDemo
 //
 //  Created by LMinh on 10/11/15.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LMRightMenuViewController : UIViewController
+@interface LeftMenuViewController : UIViewController
 
 @end

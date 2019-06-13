@@ -66,6 +66,11 @@
 - (void)hideMenuViewController:(BOOL)animated;
 
 /**
+ Handle pan gesture
+ */
+- (BOOL)panGestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer;
+
+/**
  Handle tap gesture
 
  @param tapGestureRecognizer The tap gesture recognizer
@@ -82,11 +87,6 @@
 /**
  Handle rotation
  */
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration;
-
-/**
- Handle rotation
- */
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation;
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator;
 
 @end

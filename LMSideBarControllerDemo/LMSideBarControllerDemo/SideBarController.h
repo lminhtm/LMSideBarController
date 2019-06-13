@@ -1,5 +1,5 @@
 //
-//  LMMenuViewController.h
+//  ViewController.h
 //  LMSideBarControllerDemo
 //
 //  Created by LMinh on 10/11/15.
@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LMSideBarController.h"
 
-@interface LMLeftMenuViewController : UIViewController
+@interface SideBarController : LMSideBarController <LMSideBarControllerDelegate>
 
 @end
+

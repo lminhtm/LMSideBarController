@@ -25,6 +25,11 @@
     // For subclass
 }
 
+- (BOOL)panGestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    return YES;
+}
+
 - (void)handleTapGesture:(UITapGestureRecognizer *)tapGestureRecognizer
 {
     // For subclass
@@ -35,12 +40,7 @@
     // For subclass
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
-{
-    // For subclass
-}
-
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     // For subclass
 }

@@ -155,15 +155,15 @@
     // Add the new one
     [self.menuViewControllers setObject:menuViewController forKey:@(direction)];
     if (direction == LMSideBarControllerDirectionLeft) {
-        [self setupViewController:menuViewController frame:CGRectMake(-self.view.bounds.size.width,
+        [self setupViewController:menuViewController frame:CGRectMake(-menuViewController.view.bounds.size.width,
                                                                       0,
-                                                                      self.view.bounds.size.width,
+                                                                      menuViewController.view.bounds.size.width,
                                                                       self.view.bounds.size.height)];
     }
     else {
         [self setupViewController:menuViewController frame:CGRectMake(self.view.bounds.size.width,
                                                                       0,
-                                                                      self.view.bounds.size.width,
+                                                                      menuViewController.view.bounds.size.width,
                                                                       self.view.bounds.size.height)];
     }
     menuViewController.view.hidden = YES;
@@ -323,6 +323,12 @@
 {
     if ([gestureRecognizer isEqual:self.panGestureRecognizer])
     {
+        LMSideBarStyle *style = [self styleForDirection:_currentDirection];
+        BOOL shouldHandle = [style panGestureRecognizerShouldBegin:gestureRecognizer];
+        if (!shouldHandle) {
+            return NO;
+        }
+        
         CGPoint velocity = [(UIPanGestureRecognizer *)gestureRecognizer velocityInView:gestureRecognizer.view];
         BOOL horizontalPan = fabs(velocity.x) > fabs(velocity.y);
         
@@ -425,16 +431,16 @@
     return NO;
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
-    [super willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
     
     // Update menu view frame
     UIViewController *leftMenuViewController = [self menuViewControllerForDirection:LMSideBarControllerDirectionLeft];
     if (leftMenuViewController) {
-        leftMenuViewController.view.frame = CGRectMake(-self.view.bounds.size.width,
+        leftMenuViewController.view.frame = CGRectMake(-leftMenuViewController.view.bounds.size.width,
                                                        0,
-                                                       self.view.bounds.size.width,
+                                                       leftMenuViewController.view.bounds.size.width,
                                                        self.view.bounds.size.height);
     }
     
@@ -442,23 +448,13 @@
     if (rightMenuViewController) {
         rightMenuViewController.view.frame = CGRectMake(self.view.bounds.size.width,
                                                         0,
-                                                        self.view.bounds.size.width,
+                                                        rightMenuViewController.view.bounds.size.width,
                                                         self.view.bounds.size.height);
     }
     
     // Let current side bar style to handle rotation
     if (_currentStyle) {
-        [_currentStyle willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
-    }
-}
-
-- (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
-{
-    [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
-    
-    // Let current side bar style to handle rotation
-    if (_currentStyle) {
-        [_currentStyle didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+        [_currentStyle viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
     }
 }
 

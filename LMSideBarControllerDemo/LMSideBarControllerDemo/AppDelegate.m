@@ -6,14 +6,13 @@
 //  Copyright © 2015 LMinh. All rights reserved.
 //
 
-#import "LMAppDelegate.h"
+#import "AppDelegate.h"
 
-@interface LMAppDelegate ()
+@interface AppDelegate ()
 
 @end
 
-@implementation LMAppDelegate
-
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.

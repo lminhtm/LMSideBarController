@@ -6,13 +6,13 @@
 //  Copyright © 2015 LMinh. All rights reserved.
 //
 
-#import "LMRootViewController.h"
-#import "LMLeftMenuViewController.h"
-#import "LMRightMenuViewController.h"
-#import "LMMainNavigationController.h"
+#import "SideBarController.h"
+#import "LeftMenuViewController.h"
+#import "RightMenuViewController.h"
+#import "MainNavigationController.h"
 #import "LMSideBarDepthStyle.h"
 
-@implementation LMRootViewController
+@implementation SideBarController
 
 - (void)awakeFromNib
 {
@@ -23,9 +23,9 @@
     sideBarDepthStyle.menuWidth = 220;
     
     // Init view controllers
-    LMLeftMenuViewController *leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
-    LMRightMenuViewController *rightMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"rightMenuViewController"];
-    LMMainNavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"mainNavigationController"];
+    LeftMenuViewController *leftMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"leftMenuViewController"];
+    RightMenuViewController *rightMenuViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"rightMenuViewController"];
+    MainNavigationController *navigationController = [self.storyboard instantiateViewControllerWithIdentifier:@"mainNavigationController"];
     
     // Setup side bar controller
     [self setPanGestureEnabled:YES];
@@ -42,7 +42,7 @@
 
 - (void)sideBarController:(LMSideBarController *)sideBarController willShowMenuViewController:(UIViewController *)menuViewController
 {
-    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+    
 }
 
 - (void)sideBarController:(LMSideBarController *)sideBarController didShowMenuViewController:(UIViewController *)menuViewController
@@ -52,7 +52,7 @@
 
 - (void)sideBarController:(LMSideBarController *)sideBarController willHideMenuViewController:(UIViewController *)menuViewController
 {
-    [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationFade];
+    
 }
 
 - (void)sideBarController:(LMSideBarController *)sideBarController didHideMenuViewController:(UIViewController *)menuViewController

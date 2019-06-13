@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name             = "LMSideBarController"
-  s.version          = "1.0.1"
+  s.version          = "1.0.2"
   s.summary          = "LMSideBarController is a simple side bar controller inspired by Tappy"
   s.homepage         = "https://github.com/lminhtm/LMSideBarController"
   s.license          = 'MIT'

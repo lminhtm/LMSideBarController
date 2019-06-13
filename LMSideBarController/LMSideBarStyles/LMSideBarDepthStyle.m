@@ -210,6 +210,20 @@
     [self finishHiding:animated];
 }
 
+- (BOOL)panGestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    CGPoint point = [gestureRecognizer locationInView:gestureRecognizer.view];
+    if (point.x < gestureRecognizer.view.bounds.size.width - self.menuWidth
+        && self.sideBarController.currentDirection == LMSideBarControllerDirectionRight) {
+        return YES;
+    }
+    if (point.x > self.menuWidth
+        && self.sideBarController.currentDirection == LMSideBarControllerDirectionLeft) {
+        return YES;
+    }
+    return NO;
+}
+
 - (void)handleTapGesture:(UITapGestureRecognizer *)tapGestureRecognizer
 {
     CGPoint touchLocation = [tapGestureRecognizer locationInView:tapGestureRecognizer.view];
@@ -313,7 +327,7 @@
     }
 }
 
-- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     LMSideBarControllerDirection direction = self.sideBarController.currentDirection;
     LMSideBarControllerState state = self.sideBarController.currentState;
